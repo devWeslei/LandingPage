@@ -1,0 +1,249 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:"Open Sans";
+}
+
+html,body{
+	height: 100%;	
+}
+
+@font-face{
+	font-family:"Open Sans";
+}
+
+.center{
+	max-width: 1280px;
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+}
+.clear{
+	clear: both;
+}
+.header{
+	padding: 0 2%;
+	width: 100%;
+	height: 60px;
+	background-color:#212343;
+}
+.header img{
+	margin: 15px;
+}
+.container-banner{
+	padding: 0px 2%;
+	width: 100%;
+	height:557px;
+	background-image:url('../images/header_bg.png');
+	background-size: cover;
+	background-position: center;
+}
+.container-banner > .center{
+	height: auto;
+}
+.form{
+	padding:20px;
+	width: 400px;
+	height: auto;
+	float: right;
+	position: relative;
+	top: -15px;
+	border-width: 12px;
+	border-style: solid;
+	border-color: rgba(120,120,120,0.5);
+	background-clip:padding-box;
+	background-color: white;
+}
+.form h2{
+	font-weight: normal;
+	color: #999;
+	font-size: 21px;
+}
+.input-container{
+	margin-top: 20px;
+}
+.input-container span, .form p{
+	display: inline-block;
+	width: 100%;
+	color: #ccc;
+	font-size: 17px;
+}
+.form p{
+	margin:20px;
+}
+.input-container input[type=text]{
+	margin-top: 8px;
+	width: 344px;
+	height: 55px;
+	padding:8px 10px 8px 10px;
+	border: 1px solid #ccc;
+}
+.input-container input[type=text]:focus{
+	outline: 0;
+}
+.form .input-submit-container{
+	text-align: center;
+}
+.form input[type=submit]{
+	color: white;
+	font-size: 25px;
+	width: 280px;
+	height: 56px;
+	background-color: #212343;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	cursor: pointer;
+	border-bottom: 3px solid #4f6ec4;
+}
+.form input[type=submit]:hover{
+	background-color: #95a5ed;
+}
+.container-list{
+	padding: 30px 4%; 
+	margin-top:100px;
+	float: left;
+	width: 519px;
+	height: 270px;
+	background-color:rgba(33,35,67,0.7);
+}
+.container-list ul{
+	list-style-position: inside;
+}
+.container-list ul li{
+	margin-top:18px;
+	color: white;
+}
+.container-2{
+	padding: 40px 2%;
+	background-color: #ddd;
+	text-align: center;
+}
+.container-2 h2{
+	font-weight: normal;
+	color:black;
+}
+.container-2 p{
+	width:100%;
+	max-width: 768px;
+	margin: 15px 0;
+	display: inline-block;
+	text-align: justify;
+}
+.arrow{
+	position: relative;
+	top: 60px;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/arrow.png');
+	background-size: 100% 100%;
+}
+.section-1{
+	padding: 90px 2%;
+}
+.section-1 h2{
+	text-align: center;
+	color: #462663;
+	font-weight: normal;	
+}
+.container-section{
+	margin-top:40px;
+	text-align: center;
+}
+.container-single p{
+	padding:10px;
+	text-align:justify;
+}
+.container-single{
+	float: left;
+	width: 33.333%;
+	padding: 30px;
+}
+.container-single img{
+	width:70px;	
+}
+.footer{
+	padding: 60px 0;
+	border-top: 2px solid #888888;
+	text-align: center;
+	color: #888888;
+}
+.footer p{
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+   	.container-list{
+		padding: 30px 4%; 
+		margin-top:100px;
+		float: left;
+		width: 48%;
+	}
+	.container-banner{
+		padding: 0px 2%;
+		width: 100%;
+		height:557px;
+		text-align: left;
+	}
+	.form{
+		padding:20px;
+		max-width: 50%;
+		width: 400px;
+		height: auto;
+		float: right;
+		position: relative;
+		top: -15px;
+	}
+	.input-container input[type=text]{
+		width: 100%;
+		height: 55px;
+	}
+	.form input[type=submit]{
+		max-width: 280px;
+		height: 56px;
+		cursor: pointer;
+		width: 100%;
+	}
+
+@media screen and (max-width: 768px){
+	.header{
+		text-align: center;
+	}
+	.container-2{
+		padding-right: 4%;
+		padding-left: 4%;
+	}
+	.container-banner{
+		height: auto;
+	}
+	.container-list{
+		display: inline-block;
+		float: none;
+		height: auto;
+		width: 100%;
+		padding: 30px 4%;
+		margin-top: 5%;	
+	} 
+	.form{
+		display: inline-block;
+		padding:10px;
+		width: auto;
+		max-width: 400px;
+		height: 0 auto;
+		float: none;
+		position: relative;
+		border-width: 12px;
+		background-color: white;
+		margin-top: 5%;
+	}
+	.container-single{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600px;
+		padding: 30px 0;
+	}
+}
